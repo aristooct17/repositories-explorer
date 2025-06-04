@@ -67,7 +67,7 @@ const GitHubUserSearch: React.FC = () => {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         onKeyDown={(e) => e.key === "Enter" && searchUsers()}
-        className="w-full border rounded px-3 py-2"
+        className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-100 text-black"
       />
       <button
         onClick={searchUsers}
@@ -80,7 +80,7 @@ const GitHubUserSearch: React.FC = () => {
       {error && <p className="text-red-500">{error}</p>}
 
       {users.length > 0 && (
-        <p>
+        <p className="text-black">
           Showing users for <strong>"{query}"</strong>
         </p>
       )}
@@ -116,7 +116,7 @@ const GitHubUserSearch: React.FC = () => {
                     </div>
                   ))
                 ) : (
-                  <p>Loading repositories...</p>
+                  <p className="text-black">Loading repositories...</p>
                 )}
               </div>
             )}

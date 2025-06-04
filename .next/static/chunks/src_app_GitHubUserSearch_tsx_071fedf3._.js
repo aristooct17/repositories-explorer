@@ -66,7 +66,7 @@ const GitHubUserSearch = ()=>{
                 value: query,
                 onChange: (e)=>setQuery(e.target.value),
                 onKeyDown: (e)=>e.key === "Enter" && searchUsers(),
-                className: "w-full border rounded px-3 py-2"
+                className: "w-full border border-gray-300 rounded px-3 py-2 bg-gray-100 text-black"
             }, void 0, false, {
                 fileName: "[project]/src/app/GitHubUserSearch.tsx",
                 lineNumber: 64,
@@ -91,6 +91,7 @@ const GitHubUserSearch = ()=>{
                 columnNumber: 17
             }, this),
             users.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "text-black",
                 children: [
                     "Showing users for ",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
@@ -192,6 +193,7 @@ const GitHubUserSearch = ()=>{
                                         lineNumber: 102,
                                         columnNumber: 21
                                     }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-black",
                                     children: "Loading repositories..."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/GitHubUserSearch.tsx",
